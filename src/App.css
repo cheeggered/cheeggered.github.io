@@ -1,5 +1,21 @@
+:root {
+  --bg-light: white;
+  --bg-dark: black;
+  --text-light: black;
+  --text-dark: white;
+}
+
 .App {
   text-align: center;
+  background-color: var(--bg-light); /* Default background color */
+  color: var(--text-light); /* Default text color */
+}
+
+@media (prefers-color-scheme: dark) {
+  .App {
+    background-color: var(--bg-dark); /* Change background to black in dark mode */
+    color: var(--text-dark); /* Change text color to white in dark mode */
+  }
 }
 
 .App-logo {

@@ -1,12 +1,15 @@
+import React from "react";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
-import React from "react";
+import { ThemeProvider, useTheme } from "./ThemeContext";
 
-export const App = () => {
+const App = () => {
+  const { toggleDarkMode } = useTheme();
+
   return (
-    <div className="app">
+    <div className={`app ${toggleDarkMode ? "bg-black" : ""}`}>
       <Navbar />
       <Home />
       <hr className="mt-36" />
@@ -17,4 +20,10 @@ export const App = () => {
   );
 };
 
-export default App;
+const RootApp = () => (
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>
+);
+
+export default RootApp;

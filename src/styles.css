@@ -2,18 +2,19 @@
 
 .navbar {
     overflow: hidden;
-    background-color: white;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     height: 7%;
     width: 100%; /* Full width */
     z-index: 1;
-    border-bottom: 1px solid #ccc;
 }
 
+.experience-page,
+.about-page,
 .home-page {
     padding-top: 7%; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    height: 100%;
 }
 
 .timeline-container {
@@ -22,13 +23,11 @@
     align-items: center;    /* Center vertically */
     min-height: 100vh;      /* Full height of the viewport */
 }
-
 #typewriter-text {
     height: 4em; /* Set a fixed height, adjust as needed */
     overflow: hidden; /* Hide overflow if text exceeds height */
     position: relative; /* Position the element */
 }
-
 body {
     --color: rgba(30, 30, 30);
     --bgColor: white;
@@ -141,13 +140,14 @@ ul li:hover .date::before,
 ul li .date:hover::before,
 ul li:hover .date::after,
 ul li .date:hover::after {
-    background-color: #666; /* Change to the desired hover color */
-}
+    background-color: var(--hover-color); /* Ensure this variable is correctly referenced */
+  }
+  
 
 /* title descr */
 ul li .title,
 ul li .descr {
-    background: rgb(250, 250, 250);
+    background: var(--container-color);
     position: relative;
     padding-inline: 1.5rem;
 }
