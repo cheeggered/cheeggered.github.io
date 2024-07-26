@@ -33,9 +33,17 @@ const Home: React.FC = () => {
         >
           <Typewriter
             options={{
-              strings: ["Hey there! I'm a CS & Statistics student from NUS."],
               autoStart: true,
-              loop: true,
+              loop: false,
+              delay: 35,
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  "Hey there! I'm a penultimate CS & Statistics student from NUS."
+                )
+                .pauseFor(10) // Pause for 2000 milliseconds (2 seconds) after typin
+                .start();
             }}
           />
         </div>
