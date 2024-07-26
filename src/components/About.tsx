@@ -29,12 +29,12 @@ const About = () => {
                     toggleDarkMode ? "text-gray-300" : "text-gray-600"
                   }`}
                 >
-                  Hello! I'm a sophomore at the National University of
+                  Hello! I'm a penultimate student at the National University of
                   Singapore, passionate about becoming a skilled software
                   engineer. My interests span both front-end and back-end
-                  development. In my free time, I enjoy arts and crafts. I'm
-                  eager to explore opportunities to apply my skills and
-                  collaborate on innovative projects.
+                  development. In my free time, I enjoy crocheting and crafting
+                  beaded accessories. I'm eager to explore opportunities to
+                  apply my skills and collaborate on innovative projects.
                 </p>
                 <div className="flex mt-4 space-x-4">
                   <a
