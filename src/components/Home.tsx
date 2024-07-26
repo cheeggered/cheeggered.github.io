@@ -9,16 +9,16 @@ const Home: React.FC = () => {
 
   return (
     <section id="home" className={`home-page`}>
-      <div className="flex flex-col justify-start px-44">
+      <div className="flex flex-col justify-start px-10 md:px-20 lg:px-40 mt-10">
         <div
-          className={`text-2xl primary mb-2 font-bold ${
+          className={`text-lg lg:text-2xl primary lg:mb-2 font-bold ${
             toggleDarkMode && "text-white"
           }`}
         >
           Mah Chee Teng
         </div>
         <div
-          className={`text-xl mb-20 ${
+          className={`text-sm lg:text-xl mb-10 lg:mb-20 ${
             toggleDarkMode ? "text-gray-400" : "text-gray-700"
           }`}
         >
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         </div>
 
         <div
-          className={`typewriter-text text-7xl leading-tight font-extrabold ${
+          className={`typewriter-text text-2xl md:text-6xl lg:text-7xl leading-tight font-extrabold ${
             toggleDarkMode && "text-white"
           }`}
           id="typewriter-text"

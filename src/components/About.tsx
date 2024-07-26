@@ -18,7 +18,7 @@ const About = () => {
             <div className="mt-16 space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-12 lg:space-y-0">
               <div className="relative h-full overflow-hidden rounded-lg">
                 <img
-                  src="https://storage.cloud.google.com/cheeggered/portrait.jpeg"
+                  src="portrait.jpeg"
                   alt="Portrait"
                   className="h-full w-full rounded-lg object-contain"
                 />
@@ -32,9 +32,9 @@ const About = () => {
                   Hello! I'm a sophomore at the National University of
                   Singapore, passionate about becoming a skilled software
                   engineer. My interests span both front-end and back-end
-                  development. In my free time, I enjoy crocheting and crafting
-                  beaded accessories. I'm eager to explore opportunities to
-                  apply my skills and collaborate on innovative projects.
+                  development. In my free time, I enjoy arts and crafts. I'm
+                  eager to explore opportunities to apply my skills and
+                  collaborate on innovative projects.
                 </p>
                 <div className="flex mt-4 space-x-4">
                   <a

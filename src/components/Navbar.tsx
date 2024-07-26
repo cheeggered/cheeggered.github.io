@@ -9,8 +9,8 @@ const Navbar: React.FC = () => {
   const { toggleDarkMode, toggleDarkTheme } = useTheme();
 
   return (
-    <nav className={`navbar ${toggleDarkMode ? "bg-black" : ""}`}>
-      <div className="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8 border-b-black">
+    <nav className={`navbar ${toggleDarkMode ? "bg-black" : "bg-white"}`}>
+      <div className="flex justify-between items-center h-16 px-6 lg:px-8 border-b-black">
         <div>
           <IconButton color="inherit" onClick={toggleDarkTheme}>
             {toggleDarkMode ? (

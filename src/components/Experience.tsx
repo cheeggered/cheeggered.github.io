@@ -5,11 +5,11 @@ const Experience = () => {
   const { toggleDarkMode } = useTheme();
 
   return (
-    <section id="experiences" className="experience-page">
+    <section id="experiences" className="experience-page mb-10">
       <div
         className={`flex justify-center text-4xl font-bold ${
           toggleDarkMode ? "text-gray-100" : "text-gray-950"
-        } mt-12`}
+        } mt-12 mb-5`}
       >
         Experiences
       </div>
